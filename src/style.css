@@ -62,7 +62,7 @@ body {
 
 .nav-Links {
   position: relative;
-  top: 50%;
+  top: 60%;
   right: 20px;
   transition-duration: 1.9s;
 }
@@ -95,5 +95,56 @@ body {
 }
 
 .nav-Links.active {
-  right: 200px;
+  right: 220px;
+}
+
+.main-wrap {
+  overflow-y: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: start;
+  align-items: center;
+  top: 0;
+  z-index: -1;
+}
+
+.main-wrap .header {
+  width: 100vw;
+  height: 100vh;
+  padding: 0% 5%;
+  background-color: white;
+  transition: all;
+  transition-duration: 1s;
+}
+
+.main-wrap .header .header-wrapper {
+  padding: 5% 5%;
+}
+
+.main-wrap .header .header-wrapper p {
+  max-width: 100ch;
+}
+
+.main-wrap .header .header-wrapper img {
+  height: 25%;
+  width: 25%;
+}
+
+@media screen and (max-width: 769px) {
+  .main-wrap .header .header-wrapper img {
+    height: 65%;
+    width: 65%;
+  }
+
+  .main-wrap .header .header-wrapper .header.active {
+    position: relative;
+    transform: rotate(-35deg);
+  }
+}
+
+.main-wrap .header.active {
+  position: relative;
+  transform: rotate(-15deg);
+  transform-origin: left top;
 }
