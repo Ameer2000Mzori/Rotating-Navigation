@@ -48,8 +48,18 @@ body {
   .close-Menu:hover {
     cursor: pointer;
   }
+
+  i {
+    color: white;
+  }
 }
 
 .navbar:hover {
   transform: rotate(-180deg);
+}
+
+.nav-Links {
+  i {
+    color: white;
+  }
 }

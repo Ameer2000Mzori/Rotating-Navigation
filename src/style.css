@@ -50,6 +50,14 @@ body {
   cursor: pointer;
 }
 
+.navbar i {
+  color: white;
+}
+
 .navbar:hover {
   transform: rotate(-180deg);
+}
+
+.nav-Links i {
+  color: white;
 }
