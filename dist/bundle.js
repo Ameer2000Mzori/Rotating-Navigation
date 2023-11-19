@@ -1,1 +1,1 @@
-console.log("hallo world");
+(()=>{var e=document.querySelector(".open-Menu"),c=document.querySelector(".close-Menu"),t=document.querySelector(".navbar");e.addEventListener("click",(function(){t.classList.contains("active")||t.classList.add("active")})),c.addEventListener("click",(function(){t.classList.contains("active")&&t.classList.remove("active")}))})();
