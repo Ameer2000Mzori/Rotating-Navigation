@@ -4,5 +4,52 @@ body {
   padding: 0;
   margin: 0;
   background-color: black;
+  overflow: hidden;
   font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  right: 70px;
+  bottom: 70px;
+  padding: 1rem;
+  justify-content: center;
+  background-color: rgb(248, 131, 35);
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  transition: all;
+  transition-duration: 2s;
+
+  .open-Menu,
+  .close-Menu {
+    background-color: transparent;
+    border-radius: none;
+    font-size: 30px;
+    border-style: none;
+  }
+
+  .open-Menu {
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+  }
+
+  .close-Menu {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+  }
+
+  .open-Menu,
+  .close-Menu:hover {
+    cursor: pointer;
+  }
+}
+
+.navbar:hover {
+  transform: rotate(-180deg);
 }
