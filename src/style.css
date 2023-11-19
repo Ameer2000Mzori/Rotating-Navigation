@@ -3,9 +3,11 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: rgb(39, 39, 39);
   overflow: hidden;
   font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
 
 .navbar {
@@ -58,6 +60,40 @@ body {
   transform: rotate(-180deg);
 }
 
-.nav-Links i {
+.nav-Links {
+  position: relative;
+  top: 50%;
+  right: 20px;
+  transition-duration: 1.9s;
+}
+
+.nav-Links ul li {
+  padding: 1rem;
+  list-style: none;
+}
+
+.nav-Links ul li i {
+  margin-right: 1rem;
   color: white;
+}
+
+.nav-Links ul li a {
+  padding-right: 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.nav-Links ul :nth-child(2) {
+  position: relative;
+  left: 10px;
+}
+
+.nav-Links ul :nth-child(3) {
+  position: relative;
+  left: 20px;
+}
+
+.nav-Links.active {
+  right: 200px;
 }
