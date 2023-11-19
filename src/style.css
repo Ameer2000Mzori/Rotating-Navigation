@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -25,6 +26,7 @@ body {
   transition: all;
   transition-duration: 2s;
 }
+
 .navbar .open-Menu,
 .navbar .close-Menu {
   background-color: transparent;
@@ -32,20 +34,24 @@ body {
   font-size: 30px;
   border-style: none;
 }
+
 .navbar .open-Menu {
   position: absolute;
   right: 35px;
   bottom: 35px;
 }
+
 .navbar .close-Menu {
   position: absolute;
   left: 35px;
   top: 35px;
 }
+
 .navbar .open-Menu,
 .navbar .close-Menu:hover {
   cursor: pointer;
 }
+
 .navbar i {
   color: white;
 }
@@ -60,24 +66,29 @@ body {
   right: 20px;
   transition-duration: 1.9s;
 }
+
 .nav-Links ul li {
   padding: 1rem;
   list-style: none;
 }
+
 .nav-Links ul li i {
   margin-right: 1rem;
   color: white;
 }
+
 .nav-Links ul li a {
   padding-right: 1rem;
   color: white;
   text-decoration: none;
   font-family: inherit;
 }
+
 .nav-Links ul :nth-child(2) {
   position: relative;
   left: 10px;
 }
+
 .nav-Links ul :nth-child(3) {
   position: relative;
   left: 20px;
@@ -97,6 +108,7 @@ body {
   top: 0;
   z-index: -1;
 }
+
 .main-wrap .header {
   width: 100vw;
   height: 100vh;
@@ -105,30 +117,34 @@ body {
   transition: all;
   transition-duration: 1s;
 }
+
 .main-wrap .header .header-wrapper {
   padding: 5% 5%;
 }
+
 .main-wrap .header .header-wrapper p {
   max-width: 100ch;
 }
+
 .main-wrap .header .header-wrapper img {
   height: 25%;
   width: 25%;
 }
+
 @media screen and (max-width: 769px) {
   .main-wrap .header .header-wrapper img {
     height: 65%;
     width: 65%;
   }
+
   .main-wrap .header .header-wrapper .header.active {
     position: relative;
     transform: rotate(-35deg);
   }
 }
+
 .main-wrap .header.active {
   position: relative;
   transform: rotate(-15deg);
   transform-origin: left top;
 }
-
-/*# sourceMappingURL=style.css.map */
