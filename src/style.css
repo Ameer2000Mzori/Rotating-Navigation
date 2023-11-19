@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 body {
   padding: 0;
   margin: 0;
@@ -24,7 +23,6 @@ body {
   transition: all;
   transition-duration: 2s;
 }
-
 .navbar .open-Menu,
 .navbar .close-Menu {
   background-color: transparent;
@@ -32,32 +30,30 @@ body {
   font-size: 30px;
   border-style: none;
 }
-
 .navbar .open-Menu {
   position: absolute;
   right: 35px;
   bottom: 35px;
 }
-
 .navbar .close-Menu {
   position: absolute;
   left: 35px;
   top: 35px;
 }
-
 .navbar .open-Menu,
 .navbar .close-Menu:hover {
   cursor: pointer;
 }
-
 .navbar i {
   color: white;
 }
 
-.navbar:hover {
+.navbar.active {
   transform: rotate(-180deg);
 }
 
 .nav-Links i {
   color: white;
 }
+
+/*# sourceMappingURL=style.css.map */

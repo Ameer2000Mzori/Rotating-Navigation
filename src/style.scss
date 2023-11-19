@@ -54,7 +54,7 @@ body {
   }
 }
 
-.navbar:hover {
+.navbar.active {
   transform: rotate(-180deg);
 }
 
